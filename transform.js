@@ -23,7 +23,6 @@ const transformEntry = (r_data) => {
         )
     );
     
-    console.log("route", route, typeof route.endpoint);
     // removes all postman placeholder variables
     route.endpoint = route.endpoint.replace(POSTMAN_PARAM_REGEX, "");
 
